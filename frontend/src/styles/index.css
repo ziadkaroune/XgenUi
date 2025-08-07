@@ -4,13 +4,15 @@
     min-height: 100vh;
 }
 body{
- 
+ background-color: black;
+     background-image: linear-gradient(319deg, #a470e0 1%, transparent 31%);
+
 }
 
 .navlink{
     position: relative;
     display: flex ;
-    background-color: #ebebeb;
+    background-color: #ebebeb; 
     width: 100%;
     -webkit-box-align: center;
     align-items: center;
