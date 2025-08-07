@@ -8,7 +8,7 @@ function Home() {
 
   return (
     <>
-      <Header/>
+      <Header home />
       <main>
         <HeroSection />
       </main>

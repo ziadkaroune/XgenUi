@@ -34,12 +34,13 @@ const HeroSection = () => {
   }, [charIndex, fullTextIndex]);
 
   return (
-    <div className="text-center py-24 px-6 md:px-10 min-h-[90vh]">
-      <h1 className="text-4xl md:text-6xl font-semibold leading-tight mb-6 w-4/5 mx-auto">
+    <div className="text-center py-24 px-6 md:px-10 min-h-[90vh] flex justify-center items-center">
+      <div>
+      <h1 className="text-4xl md:text-6xl text-white font-semibold leading-tight mb-6 w-4/5 mx-auto">
         Turn product ideas into concepts instantly with{" "}
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-black to-gray-700">XGENUI</span>
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-gray-700">XGENUI</span>
       </h1>
-      <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-10">
+      <p className="text-lg md:text-xl text-[#888] max-w-2xl mx-auto mb-10">
         Visualize, communicate, and iterate on wireframes and prototypes in minutes. Empower your product team with AI!
       </p>
 
@@ -49,10 +50,11 @@ const HeroSection = () => {
             {displayText}
             <span className="animate-pulse text-black ml-1">|</span>
           </span>
-          <Link to="/studio" className="bg-black text-white w-[25%] h-full hover:bg-gray-900 transition rounded-xl flex justify-center items-center">
+          <Link to="/studio" className="bg-gradient-to-r from-purple-400 to-gray-700 text-white w-[25%] h-full hover:bg-gray-900 transition rounded-xl flex justify-center items-center">
             Generate
           </Link>
         </div>
+      </div>
       </div>
     </div>
   );
