@@ -1,1 +1,25 @@
 @import "tailwindcss";
+
+#root{
+    min-height: 100vh;
+}
+body{
+ 
+}
+
+.navlink{
+    position: relative;
+    display: flex ;
+    background-color: #ebebeb;
+    width: 100%;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 48px;
+    cursor: pointer;
+    transition: 300ms;
+    color: black;
+    outline: none;
+    border-radius: 8px;
+    padding: 8px 12px; 
+    box-shadow: rgba(255, 255, 255, 0.16) 0px 2px 8px, rgb(184, 184, 184) 0px 1px 1px inset;
+}

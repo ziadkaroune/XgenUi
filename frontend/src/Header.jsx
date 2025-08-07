@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 export default function Header() {
   return (
-    <header className="bg-white text-gray-900 border-b-1">
+    <header className=" text-gray-900 border-b-1">
       {/* Navigation */}
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         <div className="text-2xl font-semibold tracking-tight">XGENUI</div>
