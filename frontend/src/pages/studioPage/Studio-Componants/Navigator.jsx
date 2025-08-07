@@ -41,9 +41,9 @@ const Navigator = ()=>{
                                 </button>
                          </div>
                          <div className="mt-3 w-full h-1 bg-gray-600 rounded">
-                           <div className="w-[69%] h-1 bg-blue-500 rounded" />
+                           <div className="w-[69%] h-1  bg-purple-600 rounded" />
                          </div>
-                         <div className="mt-1">273/400 components used</div>
+                         <div className="mt-1 text-black">273/400 components used</div>
                        </div>
                      </aside> 
   
