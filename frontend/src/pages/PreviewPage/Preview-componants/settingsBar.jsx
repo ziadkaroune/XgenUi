@@ -2,9 +2,9 @@
 export default function SettingsBar({setZoom , zoom}){
 
 return(
- <div className="w-1/3  rounded-3xl ">
+ <div className="w-1/3  rounded-3xl bg-red-300">
                       
-<div class="absolute left-1/2 top-5 z-[100] -translate-x-1/2 flex items-center gap-2 rounded-2xl bg-[#313131]/90 p-2 backdrop-blur-xl text-white">
+<div class="absolute left-1/2 top-5 z-40 -translate-x-1/2 flex items-center gap-2 rounded-2xl bg-[#313131]/90 p-2 backdrop-blur-xl text-white">
 
  
   <div class="flex items-center gap-1">

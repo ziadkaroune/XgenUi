@@ -8,21 +8,26 @@ export default function Navbar() {
   return (
     <>
       {/* Mobile Toggle Button */}
-      <div className="md:hidden max-md:w-full bg-[#313131] text-white p-4 flex justify-between items-center shadow-lg">
-        <div className="text-lg font-semibold">
-          XGENUI<span className="text-purple-500">.</span>
+      <div className="md:hidden max-md:w-full z-50 border-b border-[#252525]  text-white p-4 flex justify-between items-center shadow-lg">
+           <div className="text-xl sm:text-2xl font-semibold tracking-tight">
+          <Link to="/" className="flex items-center relative pb-1">
+            <span>XGENUI<span className="text-purple-500">.</span></span> <span className="bg-purple px-1 text-xs ">beta</span>
+          </Link>
         </div>
+       
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="p-2 bg-white/10 rounded-lg focus:outline-none"
-        >
-          {isOpen ? "✖" : "☰"}
+          className="p-2 bg-white/10 rounded-lg focus:outline-none">
+         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sliders" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1z"/>
+             </svg>
+             
         </button>
       </div>
 
       {/* Sidebar */}
       <aside
-        className={`bg-[#313131]/90 text-white fixed md:static top-0 left-0 h-screen w-[280px]  pt-10 px-6 shadow-xl flex flex-col justify-between transform transition-transform duration-300 z-50
+        className={`bg-[#313131]/90 max-md:bg-[#232323] max-md:pb-4 text-white fixed md:static  overflow-scroll top-0 left-0 h-screen w-[280px]  pt-10 px-6 shadow-xl flex flex-col justify-between transform transition-transform duration-300 z-50
         ${isOpen ? "translate-x-0" : "-translate-x-full"} md:translate-x-0`}
       >
         {/* Top Section */}
