@@ -27,7 +27,7 @@ const [disabled , setDisabled] = useState(false);
         {/* title */}
       <h1 className="text-3xl font-semibold text-white text-center">
           What should we 
-          <span className="relative">design?
+          <span className="relative"> design?
                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 20" className="absolute -bottom-2 left-0 w-full">
                     <defs>
                       <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">

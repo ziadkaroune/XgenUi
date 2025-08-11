@@ -58,7 +58,7 @@ function sendInput(){
     return(
         <>
         <Header />
-        <main className=" min-h-screen flex justify-center items-center bg-black max-md:mt-[15vh]">
+        <main className=" min-h-screen flex justify-center items-center bg-black max-md:mt-[10vh]">
            
             <div className='max-md:w-full max-xl:w-4/5 w-3/4 px-3  '>
                     <Dashboard userInput={userInput} setUserInput={setUserInput} sendInput={sendInput} />
