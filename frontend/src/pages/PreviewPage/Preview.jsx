@@ -48,13 +48,13 @@ export default function Preview() {
               <h3>screen 1</h3>
             </div>
             <div className="flex flex-nowrap">
-              <div className="bg-[#323232] flex-1 mr-1 flex justify-center items-center relative">
+              <div className="bg-[#323232] h-[80vh] flex-1 mr-1 flex justify-center items-center relative">
                 {error && <h1 className="text-white">Oups something is wrong</h1>}
                 {!error && loading && <div className="loading-screen"></div>}
                 {!error && !loading && (
                   <iframe
                     ref={iframeRef}
-                    className="w-full h-[80vh] border-0"
+                    className="w-full h-full border-0"
                     title="Preview"
                   />
                 )}
