@@ -14,11 +14,11 @@ export default function Preview() {
   // Simulate loading delay
   useEffect(() => {
     setLoading(true);
-    const timer = setTimeout(() => setLoading(false), 1000); // shorter load for dev
+    const timer = setTimeout(() => setLoading(false), 1000); 
     return () => clearTimeout(timer);
   }, [specificUiData]);
 
-  // Load HTML into iframe using Blob URL
+  // Load html into iframe using Blob url
   useEffect(() => {
     if (specificUiData === "error") {
       setError(true);
