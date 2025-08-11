@@ -1,4 +1,5 @@
 
+
 import Header from '../../Header.jsx';
 import { useState , useContext , useEffect } from 'react';
 import {MockupContext} from '../../GlobalState/MockupContext.jsx'
@@ -21,7 +22,7 @@ function generateScript(desc){
   const matchedScript = data.find(elem => 
   desc.toLowerCase().includes(elem.keyword.toLowerCase())
 );
-  return  matchedScript;
+  return  matchedScript || ""; {/* if the userInput doesn't include the stored keywords in data folder return " " (return error)  */}
 }
 
 function sendInput(){
@@ -33,10 +34,7 @@ function sendInput(){
       setIndex(0);
   }
 }
-
  
-
-
 
  const PromptLoadingText = sharedData?.promptLLM ;
  const navigate = useNavigate();
@@ -78,3 +76,6 @@ function sendInput(){
     );
 }
 export default Studio;
+
+
+

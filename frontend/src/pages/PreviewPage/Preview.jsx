@@ -14,7 +14,7 @@ export default function Preview() {
   // Simulate loading delay
   useEffect(() => {
     setLoading(true);
-    const timer = setTimeout(() => setLoading(false), 1000); 
+    const timer = setTimeout(() => setLoading(false), 100); 
     return () => clearTimeout(timer);
   }, [specificUiData]);
 
@@ -49,7 +49,9 @@ export default function Preview() {
             </div>
             <div className="flex flex-nowrap">
               <div className="bg-[#323232] h-[80vh] flex-1 mr-1 flex justify-center items-center relative">
-                {error && <h1 className="text-white">Oups something is wrong</h1>}
+                {error && <h1 className="text-white w-3/5">
+                   Heads up! XgenUi is in beta, so some visuals might not load perfectly while we’re busy crafting the best experience. Thanks for your patience — and here’s a quick trick: use the suggestions to get the most out of the app during this early phase!
+                  </h1>}
                 {!error && loading && <div className="loading-screen"></div>}
                 {!error && !loading && (
                   <iframe
