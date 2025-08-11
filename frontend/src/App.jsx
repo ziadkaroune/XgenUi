@@ -1,18 +1,24 @@
 
-import { BrowserRouter as Router , Route , Routes ,Link } from 'react-router-dom'
- 
+import { BrowserRouter as Router , Route , Routes  } from 'react-router-dom'
 import Home from './pages/HomePage/Home'
 import Studio from './pages/studioPage/Studio'
-function App() {
- 
+import Preview from './pages/PreviewPage/Preview'
+import {MockupProvider} from './GlobalState/MockupContext'
 
+
+function App() {
   return (
     <>
+
+
       <Router>
-        <Routes>
-            <Route path='/'  element={<Home/>}/>
-            <Route path='/studio'  element={<Studio/>}/>
-        </Routes>
+        <MockupProvider>
+            <Routes>
+                <Route path='/'  element={<Home/>}/>
+                 <Route path='/studio'  element={<Studio/>}/>
+                 <Route path='/preview'  element={<Preview/>}/>
+            </Routes>
+       </MockupProvider>
       </Router>
     </>
   )

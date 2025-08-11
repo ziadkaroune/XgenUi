@@ -1,0 +1,46 @@
+
+ [
+  {
+    "keyword": "fitness tracker",
+    "desc": "Build a dark-themed fitness tracker UI showing steps, distance, and calories burned."
+  },
+  {
+    "keyword": "chat app",
+     "desc": "Create a simple chat app UI with sent and received messages and input area."
+  },
+  {
+    "keyword": "weather widget",
+    "desc": "Design a compact weather widget showing location, temperature, and conditions."
+  },
+  {
+    "keyword": "event landing page",
+    "desc": "Create a bold and simple event landing page with a call to action button."
+  },
+  {
+     "keyword": "blog post",
+     "desc": "Design a clean and readable blog post layout with title, author info, and content."
+  },
+  {
+    "keyword": "recipe app",
+     "desc": "A clean, grid-based recipe listing with images, descriptions, and action buttons."
+  },
+  {
+    "keyword": "music player",
+    "desc": "A sleek, dark-themed music player with cover art, song info, controls, and progress bar."
+  },
+  {
+    "keyword": "task manager",
+    "desc": "A light task manager layout with a task list, add button, and completion styling."
+},
+  {
+    "keyword": "travel booking",
+    "desc": "A travel booking interface with search fields and destination cards."
+  },
+  {
+    "keyword": "portfolio showcase",
+    "desc": "A modern portfolio grid showcasing recent projects with images and short descriptions."
+   }
+]
+
+
+
