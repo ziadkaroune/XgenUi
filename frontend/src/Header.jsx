@@ -5,7 +5,7 @@ export default function Header({ home }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className={`text-white border-b border-[#252525] relative${!home && " !absolute w-full top-0 left-0" }`}>
+    <header className={`text-white border-b border-[#252525] relative ${!home && " !absolute w-full top-0 left-0" }`}>
       <div
         className={`max-w-7xl mx-auto px-4 sm:px-6 py-8 flex ${
           home ? "justify-between" : "justify-center "
@@ -33,7 +33,7 @@ export default function Header({ home }) {
               </a>
             </nav>
 
-            {/* Desktop CTA */}
+            {/* only desktop */}
             <div className=" hidden md:block">
               <Link
                 to="/studio"
@@ -78,7 +78,7 @@ export default function Header({ home }) {
 
       {/* Mobile Nav Menu */}
       {home && mobileMenuOpen && (
-        <div className="md:hidden px-6 pb-4 pt-2 bg-[#121212] border-t border-[#252525]">
+        <div className="md:hidden px-6 py-8 bg-[#121212]  border-[#252525]">
           <nav className="flex flex-col space-y-4 text-sm font-medium">
             <a
               href="#features"
