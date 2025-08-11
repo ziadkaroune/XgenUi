@@ -1,3 +1,3 @@
 
 * XGENUI beta V1.0
-- Live : https://xgenui.netlify.app/
+- Live Demo : https://xgenui.netlify.app/
