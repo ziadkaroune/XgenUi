@@ -48,7 +48,7 @@ function sendInput(){
             const timeout = setTimeout(() => {
               setDisplayedText(PromptLoadingText.slice(0, index + 1));
               setIndex(index + 1);
-            }, 10); 
+            }, 1000); 
             return () => {clearTimeout(timeout);  }
           }
           else{
