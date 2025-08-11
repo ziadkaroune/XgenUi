@@ -1,19 +1,13 @@
 import { useEffect, useState } from "react";
 
-
-const Dashboard = ({userInput ,setUserInput , sendInput}) => {
+const InputGenerator = ({userInput ,setUserInput , handleGenerate}) => {
 const [disabled , setDisabled] = useState(false);
 
-{/* disbale button when the input is < 3 */}
+{/* disable button when the input.length < 3 */}
  function disablFunc(){
-      if(userInput?.desc?.trim().length < 3) {
-        setDisabled(true);
-      } 
-      else{
-          setDisabled(false);
-      }
+      if(userInput?.desc?.trim().length < 3) setDisabled(true);
+      else setDisabled(false);
  }
-
       useEffect(()=>{
         disablFunc();
       },[userInput])
@@ -21,9 +15,7 @@ const [disabled , setDisabled] = useState(false);
       
   return (
     <>
- 
       <section className="space-y-8    mx-auto">
-
         {/* title */}
       <h1 className="text-3xl font-semibold text-white text-center">
           What should we 
@@ -46,7 +38,7 @@ const [disabled , setDisabled] = useState(false);
             </span>
      </h1>
 
-     {/* userInput */}
+     {/* user description  Input */}
       <div className=" shadow-sm border  border-[#252525] pt-10 pb-4 px-4 rounded-3xl max-w-3xl mx-auto relative">
                   <textarea
                     onChange={(e) => setUserInput(prev => ({ ...prev, desc: e.target.value }))}
@@ -94,7 +86,7 @@ const [disabled , setDisabled] = useState(false);
 
                                           {/*generate  button */}
                               <div className="flex items-center justify-center max-md:w-full relative">
-                                        <button disabled={disabled} className={`text-white px-6 py-2 max-md:w-full max-md:justify-center bg-gradient-to-r from-[#a75bff] to-[#0038db] rounded-full text-sm inline-flex ${disabled ? 'opacity-50 cursor-not-allowed' : 'opacity-100 cursor-pointer'}`}  onClick={sendInput}>
+                                        <button disabled={disabled} className={`text-white px-6 py-2 max-md:w-full max-md:justify-center bg-gradient-to-r from-[#a75bff] to-[#0038db] rounded-full text-sm inline-flex ${disabled ? 'opacity-50 cursor-not-allowed' : 'opacity-100 cursor-pointer'}`}  onClick={handleGenerate}>
                                               <span className="mr-1">Generate </span> 
                                               <span>
                                                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stars" viewBox="0 0 16 16">
@@ -114,4 +106,4 @@ const [disabled , setDisabled] = useState(false);
   );
 };
 
-export default Dashboard;
+export default InputGenerator;
