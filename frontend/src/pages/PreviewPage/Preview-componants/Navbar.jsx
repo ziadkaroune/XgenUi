@@ -128,6 +128,8 @@ export default function Navbar() {
           </div>
         </div>
       </aside>
+
+        {isOpen ? (<div className='overlay bg-[#121212b5] w-full h-full fixed z-40 xl md:hidden'></div>) : " " }
     </>
   );
 }
