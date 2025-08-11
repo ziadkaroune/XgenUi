@@ -27,7 +27,7 @@ export default function Navbar() {
 
       {/* Sidebar */}
       <aside
-        className={`bg-[#313131]/90 max-md:bg-[#232323] max-md:pb-4 text-white fixed md:static  overflow-scroll top-0 left-0 h-screen w-[280px]  pt-10 px-6 shadow-xl flex flex-col justify-between transform transition-transform duration-300 z-50
+        className={`bg-[#313131]/90 max-md:bg-[#232323] max-md:pb-4 text-white fixed md:static   top-0 left-0 h-screen w-[280px]  pt-10 px-6 shadow-xl flex flex-col justify-between transform transition-transform duration-300 z-50
         ${isOpen ? "translate-x-0" : "-translate-x-full"} md:translate-x-0`}
       >
         {/* Top Section */}
@@ -88,7 +88,7 @@ export default function Navbar() {
                   <h4 className="text-xs uppercase text-white/60 tracking-widest mb-2">
                     Font
                   </h4>
-                  {["Sora", "Arial", "Monument", "Impact"].map(
+                  {["Sora", "Arial", "Monument"].map(
                     (font, idx) => (
                       <li
                         key={`font-${idx}`}
